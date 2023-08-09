@@ -31,5 +31,13 @@ public class HashTableMain {
             hashTable.addOrUpdate(word,currentFrequency);
         }
         System.out.println(hashTable);
+        System.out.println("**************************************************");
+//UC3: to remove a word "Avoidable".
+        if (hashTable.remove("avoidable")) {
+            System.out.println("Word is Removed.");
+        } else
+            System.out.println("Word is Not Removed.");
+        System.out.println(hashTable);
+
     }
 }
